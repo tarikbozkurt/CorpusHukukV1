@@ -1,0 +1,277 @@
+{% load static %}
+<!doctype html>
+<html lang="tr"><head>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CORPUS HUKUK OFİS</title>
+
+
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/base.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusAnaSayfa.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusHakkimizda.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusCalismaAlanlarimiz.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusEkibimiz.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusYayinlar.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusFooter.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/mobile/corpusIletisim.css" %}">
+
+     <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/base.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusAnaSayfa.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusHakkimizda.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusCalismaAlanlarimiz.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusEkibimiz.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusYayinlar.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusFooter.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static  "css/corpusHukukv1/pc/corpusIletisim.css" %}">
+
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome/font-awesome.min.css' %}">
+
+
+    <script src={% static 'js/jquery/jquery.js' %}></script>
+    <script src="{% static 'js/owl/owl.carousel.min.js' %} "></script>
+</head>
+<style>
+
+</style>
+<body style="margin:0;background-color: black;">
+
+
+<header id="header" class="header">
+    <div class="h__container">
+        <div class="h_linkler"></div>
+        <div class="h_logo">
+            <img src="/media/corpusLogo/logo-corpus.svg" alt="" id="h__logo_img" class="h__logo_img">
+        </div>
+
+        <div class="h_menu">
+             <div id="mySidepanel" class="sidepanel" style="">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+              <a href="{% url 'main' %}">Ana Sayfa</a>
+              <a href="{% url 'Hakkimizda' %}">Hakkımızda</a>
+              <a href="{% url 'calismaAlanlarimiz' %}">Çalışma Alanlarımız</a>
+              <a href="{% url 'ekibimiz' %}">Ekibimiz</a>
+              <a href="#">Kariyer</a>
+              <a href="{% url 'yayinlar' %}">Yayınlar</a>
+              <a href="{% url 'iletisim' %}">İletişim</a>
+       </div>
+        <div class="corpusMenuArkasi"></div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+                <script>
+                  window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                      document.getElementById("header").style.background = "linear-gradient(180deg, rgb(0 0 0) 0%, rgb(0 0 0) 100%)";
+                    document.getElementById("h__logo_img").style.filter = "contrast(0)";
+
+
+                  } else {
+                     document.getElementById("header").style.background = "linear-gradient(180deg, rgb(0 0 0 / 86%) 0%, rgba(196, 196, 196, 0) 100%)";
+                    document.getElementById("h__logo_img").style.filter = "none";
+                  }
+                }
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "100%";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+                </script>
+
+
+        </div>
+    </div>
+</header>
+
+
+<div class="banner">
+    <div class="sayfaImage" style="background-image: url('/media/pageImage/2022/05/10/wallpaperflare.com_wallpaper_2.jpg')">
+    </div>
+    <div class="banner_Alan">
+        <div class="banner_Alan_Metin">
+            <p>"Yasaya saygı duymak istiyorsak, önce yasayı saygı değer hale getirmeliyiz."</p>
+            <a href="#">Birlikte   > </a>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="contents">
+
+        <div class="hizmetler">
+
+            <div class="hizmetler_metin"><h5>Hedefimiz <hr id="designHR" style="">  </h5><p> Maecenas tincidunt quis lectus a commodo. Curabitur dignissim arcu at tellus maximus, sed consequat metus scelerisque. Cras id libero id turpis hendrerit placerat. Nunc sed auctor arcu, quis lobortis quam. In molestie hendrerit augue, sed condimentum sem dictum et. Mauris tincidunt sit amet nisi in laoreet. Suspendisse non sem vel nunc facilisis auctor sit amet et massa. Nunc efficitur sagittis accumsan.</p>
+
+              <img src="/media/hakkimizda/Adsız.png" alt=""></div>
+        <hr style="">
+            <div class="hizmetler-cards">
+                <div class="cards_baslik"><h5>Sektörlerin<hr id="designHR"></h5></div>
+                <div class="card_baslik_text"><p> Nulla bibendum iaculis leo vitae pretium. Morbi maximus vulputate ipsum.</p></div>
+                <div class="cards_sektörler">
+                                    <div id="hizmetlerOwl" class="owl-carousel owl-theme">
+                                        {% for hizmet in hizmetler %}
+                                        <div class="item">
+                                            <img src="{{ hizmet.calisma_icon.url}}">
+                                            <div class="cardAlt">
+                                                <div class="card_Item_front_title">{{ hizmet.calisma_title }}</div>
+                                                <div class="card_Item_front_text">{{ hizmet.calisma_metni|truncatechars:150 }}</div>
+                                            </div>
+
+                                            </div>
+                                        {% endfor %}
+
+                                    </div>
+
+                <div class="hizmetlerTumu">
+                    <div class="hizmetlerButton">
+                        <a href="" class="hizmetlerButtonA">
+                             Çalışma Alanlarımız
+                        </a>
+                    </div>
+                </div>
+                     <script>
+                          var owl = $('.owl-carousel');
+                          owl.owlCarousel({
+                            margin: 10,
+                            loop: true,
+                            nav:true,
+                            responsive: {
+                              0: {
+                                items: 1,
+                                  nav:true,
+                              },
+                              600: {
+                                items: 2
+                              },
+                              1000: {
+                                items: 3
+                              }
+                            }
+                          })
+
+                    </script>
+                </div>
+
+            </div>
+        <hr style="">
+        </div>
+        <div class="hakkimizda">
+            <div class="hakkimizdaTasarim">
+                <hr>
+            </div>
+        <div class="hakkimizdaIcerik">
+            {% for hakkimiz in hakkimizda %}
+                <div class="hakkimizdaTitle">{{ hakkimiz.hakkinda_title }}</div>
+                <div class="hakkimizdaText">{{ hakkimiz.hakkinda_text }}</div>
+            {% endfor %}
+        <div class="hakkimizdaImage"><img src="/media/hakkimizda/simge-corpus-k-2.png" alt=""></div></div>
+           <hr>
+
+
+        <div class="yetkinliklerimiz">
+            {% for hakkimizIki in hakkimizdaIkinci %}
+             <div class="yetkinliklerimizTitle">{{ hakkimizIki.hakkinda_title}}</div>
+            <div class="yetkinliklerimizText">{{ hakkimizIki.hakkinda_text}}</div>
+            {% endfor %}
+            <div class="yetkinliklerimizOwl">
+                    <div id="yetkinlikOwl" class="owl-carousel owl-theme">
+                                        {% for firmaO in firmaOzellik %}
+                                        <div class="item">
+                                            <img src="{{ firmaO.firmaOzellik_icon.url}}">
+                                            <div id="#yetkinlikFirmaCartAlt" class="FirmaCardAlt">
+
+                                                <div class="firma_card_Item_front_adet">{{ firmaO.firmaOzellik_adet}}</div>
+                                                <div class="firma_card_Item_front_title">{{ firmaO.firmaOzellik_title }}</div>
+                                                <div class="firma_card_Item_front_text">{{ firmaO.firmaOzellik_text|truncatechars:50 }}</div>
+                                            </div>
+
+                                            </div>
+                                        {% endfor %}
+
+                                    </div>
+             <script>
+                          var owl = $('#yetkinlikOwl');
+                          owl.owlCarousel({
+                            margin: 10,
+                            loop: true,
+                            nav:true,
+                            responsive: {
+                              0: {
+                                items: 1,
+                                  nav:true,
+                              },
+                              600: {
+                                items: 2
+                              },
+                              1000: {
+                                items: 3
+                              }
+                            }
+                          })
+
+                    </script>
+            </div>
+
+        </div>
+        <hr style="margin-bottom: 100px;">
+        </div>
+        <div class="vlog">
+             <div class="vlogMetin">
+                 YAYINLARIMIZ
+                        <hr style="width: 50%;margin-left: 20px;">
+             </div>
+
+             <div class="vlogCards">
+
+                 <div class="vlogCard">
+                     <div class="vlogCardImage"><img src=""><p class="vlogCardTag">{{ posts.post_tag }}</p></div>
+                     <div class="vlogCardTitle">{{ posts.post_title |upper}}</div>
+                     <div class="vlogCardText">{{ posts.post_text|truncatechars:180 }} </div>
+                     <div class="vlogCardAlt">
+
+                             <div class="vlogCardOwner">{{ posts.owner }}</div>
+                             <div class="vlogCardDate">{{ posts.post_published_date }}</div>
+
+                     </div>
+                 </div>
+
+                 <div class="vlogTumu">
+
+
+                         <div class="vlogTumuButton"><a href="" class="tumunuGorVlog">Tüm Yayınlarımız</a></div>
+
+                 </div>
+
+             </div>
+         </div>
+        <div class="iletisim"></div>
+
+        </div>
+
+
+
+
+        {% block AnaSayfa %}{% endblock AnaSayfa %}
+        {% block hizmetler %}{% endblock hizmetler %}
+        {% block hakkimizda %}{% endblock hakkimizda %}
+        {% block calismaSektorleri %}{% endblock calismaSektorleri %}
+        {% block hakkimizdaSecond %}{% endblock hakkimizdaSecond %}
+        {% block vlog %}{% endblock vlog %}
+        {% block iletisim %}{% endblock iletisim %}
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
