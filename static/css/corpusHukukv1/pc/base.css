@@ -632,7 +632,7 @@
 padding: 20px;}
 .vlogCard{
     height: 100%;
-    width: 100%;
+    width: 300px;
     background-color: #f4f4f1;
 padding: 24px;text-align: -webkit-center;border-radius: 10px;border: outset;}
 .vlogTumu{
@@ -640,10 +640,10 @@ padding: 24px;text-align: -webkit-center;border-radius: 10px;border: outset;}
     width: 100%;
     /* background-color: brown; */
     padding: 35px;
-}
+display: flex;justify-content: center;align-items: center;align-content: center;flex-wrap: nowrap;flex-direction: column;}
 .vlogTumuButton{
     background-color: black;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: #ededed;
 text-align: center;font-size: 18px;font-family: "Inter",sans-serif;text-decoration-style: none;text-transform: uppercase;border-style: groove;}
@@ -678,7 +678,14 @@ font-family: "Inter",sans-serif;font-weight: 600;color: #112620;}
 .vlogCardAlt{
     margin-top: 220px;
 font-size: 14px;}
-
+#vlogItem{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .tumunuGorVlog{
     text-decoration: none;
     color: #938100;

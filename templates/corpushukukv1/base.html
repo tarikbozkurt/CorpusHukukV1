@@ -234,7 +234,8 @@
              </div>
 
              <div class="vlogCards">
-
+    <div id="vlogOwl" class="owl-carousel owl-theme">
+          <div id="vlogItem" class="item">
                  <div class="vlogCard">
                      <p class="vlogCardTag">{{ posts.post_tag }}</p>
                      <div class="vlogCardTitle">{{ posts.post_title |upper}}</div>
@@ -246,7 +247,29 @@
 
                      </div>
                  </div>
+          </div>
+    </div>
+                   <script>
+                          var owl = $('#vlogOwl');
+                          owl.owlCarousel({
+                            margin: 10,
+                            loop: true,
+                            nav:true,
+                            responsive: {
+                              0: {
+                                items: 1,
+                                  nav:true,
+                              },
+                              768: {
+                                items: 2
+                              },
+                              1000: {
+                                items: 3
+                              }
+                            }
+                          })
 
+                    </script>
                  <div class="vlogTumu">
 
 
