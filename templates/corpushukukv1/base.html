@@ -27,12 +27,17 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl/owl.carousel.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome/font-awesome.min.css' %}">
 
 
+
+<script src="https://kit.fontawesome.com/60b0b707bd.js" crossorigin="anonymous"></script>
     <script src={% static 'js/jquery/jquery.js' %}></script>
     <script src="{% static 'js/owl/owl.carousel.min.js' %} "></script>
+
+    <script src={% static 'js/bootstrap/bootstrap.js' %}></script>
+
+
+
 </head>
 <style>
 
@@ -225,13 +230,13 @@
         <div class="vlog">
              <div class="vlogMetin">
                  YAYINLARIMIZ
-                        <hr style="width: 50%;margin-left: 20px;">
+                        <hr style="width: 50%;">
              </div>
 
              <div class="vlogCards">
 
                  <div class="vlogCard">
-                     <div class="vlogCardImage"><img src=""><p class="vlogCardTag">{{ posts.post_tag }}</p></div>
+                     <p class="vlogCardTag">{{ posts.post_tag }}</p>
                      <div class="vlogCardTitle">{{ posts.post_title |upper}}</div>
                      <div class="vlogCardText">{{ posts.post_text|truncatechars:180 }} </div>
                      <div class="vlogCardAlt">
@@ -248,15 +253,65 @@
                          <div class="vlogTumuButton"><a href="" class="tumunuGorVlog">Tüm Yayınlarımız</a></div>
 
                  </div>
-
+           <hr style="margin-bottom: 50px;
+">
              </div>
+
          </div>
-        <div class="iletisim"></div>
+        <div class="iletisim">
+            <div class="iletisimGenel">
+                <div class="iletisimUst">
+
+                         <div class="iletisimUstOrtaMenu "><img src="/media/corpusLogo/logo-corpus.svg">  <hr></div>
+
+                        <div class="iletisimUstSolMenu">
+                            <li>Adres : <p id="footerTumYazilar">Maltepe Mahallesi Avrupa Ofis Kale Blok:9 K:7 D:3834010 Yedikule Çırpıcı Yolu/İstanbul<p></li>
+                            <li>Telefon: <p id="footerTumYazilar">+90 0212 679 49 02</p></li>
+                            <li>Fax :<p id="footerTumYazilar"> +90 0212 679 62 34</p></li>
+                            <li>Email :<p id="footerTumYazilar"> info@corpushukuk.com</p></li>
+                        </div>
+                    <div class="iletisimUstSagMenu"><li><p id="footerTumYazilar"><i class="fa fa-twitter"></i> /corpushukuk </p>   <p id="footerTumYazilar"><i class="fa fa-facebook"></i> /corpushukukofis</p>  <p id="footerTumYazilar"><i class="fa fa-linkedin"></i> /corpushukuk</p><p id="footerTumYazilar"><i class="fa fa-instagram"></i> /corpushukuk</p>  </div>
+
+                </div>
+
+                 <div class="iletisimOrta">
+                    <div class="iletisimOrtaSolMenu">
+                        <div class="footerVlogs">
+                            <div class="footerVlogsTitle">
+                                <hr>
+                                Yayınlar
+                                <br>
+                            </div>
+                            {% for vlog in footerVlog %}
+                                <div class="footerVlogsLinks"><p id="footerTumYazilar"> <a href="#">{{vlog.post_title}}</a></p></div>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="iletisimrOrtaSagMenu">
+                        <hr style="background-color: bisque;">
+                        <div class="odemeOrtaMenuImage"><img src="/media/corpusLogo/logo-corpus.svg"></div>
+                        <div class="odemeOrtaOdemetitle"><a href="https://pos.param.com.tr/Tahsilat/Default.aspx?k=132EA11F-BE47-409A-866B-A021715AC45F">Ödeme Yap</a></div>
+
+                        <hr style="background-color: bisque;">
+                    </div>
+                 <div class="OdemeYontemiHakkinda"><p id="footerTumYazilar">Pos Param ile Corpus Hukuk Ofise Kolayca Ödeme Yapabilirsiniz.</p></div>
+                </div>
+
+                  <div class="iletisimAlt">
+                      <div class="iletisimAltSolMenu">Copyright © 2022 <a href="#">Corpus Hukuk Ofisi</a></div>
+                    <div class="iletisimrAltSagMenu"></div>
+                </div>
+
+            </div>
+
+
 
         </div>
 
-
-
+        </div>
 
         {% block AnaSayfa %}{% endblock AnaSayfa %}
         {% block hizmetler %}{% endblock hizmetler %}

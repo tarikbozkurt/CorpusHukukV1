@@ -1,0 +1,1 @@
+web: gunicorn corpushukukV1.wsgi --log-file -

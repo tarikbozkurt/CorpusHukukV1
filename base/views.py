@@ -38,6 +38,7 @@ def Base(request):
     hakkimizdaIkinci = Hakkinda.objects.all()[1:]
     ekibimiz = Employee.objects.all()
     posts = Vlog.objects.all().last()
+    footerVlog=Vlog.objects.all()[:5]
     calismaAlanlari = CalismaAlanlari.objects.all()
     sektor = Sektorler.objects.all()
     pageSettings = PageSettings.objects.get(page_tag='ana-sayfa')
@@ -52,6 +53,7 @@ def Base(request):
         'firmaOzellik': firmaOzellik,
         'pageSettings': pageSettings,
         'hakkimizdaIkinci':hakkimizdaIkinci,
+        'footerVlog':footerVlog,
 
     }
     return render(request, 'corpushukukv1/base.html', context)
