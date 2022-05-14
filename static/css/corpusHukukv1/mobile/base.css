@@ -28,7 +28,7 @@
     .h__logo_img {
         display: block;
         width: 162px;
-        height: 49px;
+        height: 40px;
         /* object-fit: contain; */
     }
 
@@ -83,7 +83,7 @@
 
     /* Style the button that is used to open the sidepanel */
     .openbtn {
-        font-size: 35px;
+        font-size: 30px;
         cursor: pointer;
         background-color: #0c356100;
         color: white;
@@ -133,7 +133,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        filter: blur(0.9px);
+        /* filter: blur(0.9px); */
     }
 
     .banner_Alan {
@@ -157,22 +157,22 @@
     }
 
     .banner_Alan_Metin p {
-        text-align: left;color: #112620;
+        text-align: left;color: #ffffff;
         font-family: "AmericanaStd-Regular", sans-serif;
         margin: 0;
         /* margin-bottom: 266px; */
         /* padding-bottom: 50px; */
-        font-size: 35px;
+        font-size: 25px;
         /* font-size: 3.125rem; */
         line-height: 50px;
         line-height: 3.1rem;
         /* font-feature-settings: "kern" 1; */
         /* font-kerning: normal; */
         padding: 24px;
-        /* TEXT-TRANSFORM: UPPERCASE; */
+        TEXT-TRANSFORM: UPPERCASE;
         /* text-align: center; */
         margin-top: 100px;
-    }
+    padding-right: 15%;}
 
     .banner_Alan_Metin a {
         display: flex;
@@ -186,7 +186,7 @@
         margin-left: 120px;
         text-transform: uppercase;
         color: #484300;
-        font-size: initial;
+        margin-top: 50px;font-size: initial;
         font-family: "AmericanaStd-Regular", sans-serif;
         text-decoration: none;
     }
