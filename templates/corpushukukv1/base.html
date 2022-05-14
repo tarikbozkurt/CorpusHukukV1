@@ -70,7 +70,7 @@
                   window.onscroll = function() {scrollFunction()};
 
                 function scrollFunction() {
-                  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                       document.getElementById("header").style.background = "linear-gradient(180deg, rgb(0 0 0) 0%, rgb(0 0 0) 100%)";
                     document.getElementById("h__logo_img").style.filter = "contrast(0)";
 
@@ -195,6 +195,7 @@
                                                 <div class="firma_card_Item_front_adet">{{ firmaO.firmaOzellik_adet}}</div>
                                                 <div class="firma_card_Item_front_title">{{ firmaO.firmaOzellik_title }}</div>
                                                 <div class="firma_card_Item_front_text">{{ firmaO.firmaOzellik_text|truncatechars:50 }}</div>
+
                                             </div>
 
                                             </div>
@@ -205,12 +206,13 @@
                           var owl = $('#yetkinlikOwl');
                           owl.owlCarousel({
                             margin: 10,
+                            lazyLoad:true,
                             loop: true,
                             nav:true,
                             responsive: {
                               0: {
                                 items: 1,
-                                  nav:true,
+
                               },
                               600: {
                                 items: 2
@@ -225,14 +227,14 @@
             </div>
 
         </div>
-        <hr style="margin-bottom: 100px;">
+        <hr style="margin-bottom: 50px;">
         </div>
         <div class="vlog">
              <div class="vlogMetin">
                  YAYINLARIMIZ
                         <hr style="width: 50%;">
              </div>
-
+    <a href="#" style="color: #938100;">
              <div class="vlogCards">
     <div id="vlogOwl" class="owl-carousel owl-theme">
           <div id="vlogItem" class="item">
@@ -253,6 +255,7 @@
                           var owl = $('#vlogOwl');
                           owl.owlCarousel({
                             margin: 10,
+                            lazyLoad:true,
                             loop: true,
                             nav:true,
                             responsive: {
@@ -279,7 +282,7 @@
            <hr style="margin-bottom: 50px;
 ">
              </div>
-
+</a>
          </div>
         <div class="iletisim">
             <div class="iletisimGenel">
