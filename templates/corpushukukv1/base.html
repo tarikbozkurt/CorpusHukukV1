@@ -94,6 +94,53 @@
     </div>
 </header>
 
+<contactSabitMenu>
+    <button class="openbtn" onclick="openContactSabit()">
+                <div class="contactSabitMenu">
+                    <img src="/media/contactSabitMenu/balance.png">
+                    <span id="contactSabitMenuText">iletişim</span>
+                </div>
+     </button>
+
+
+     <div id="myContactSabit" class="contactSabitPanel" style="">
+              <a href="javascript:void(0)" class="contactSabitClosebtn" onclick="closeContactSabit()">×</a>
+              <div class="contactSabitIletisimBilgi">
+                    <span>Corpus Hukuk Ofise 7/24 ulaşa bilirsiniz, Lütfen aşağıda mevcut olan form üzerinden bizlere hangi konuda ulaşmak
+                    istediğinizi belirterek mesajınızı yazınız.
+                    </span>
+              </div>
+              <div class="ContactSabitForm">
+                  <form id="contact" action="" method="">
+                        <h6>Corpus Hukuk İletişim </h6>
+                        <div class="form-control">
+                            <input placeholder="Adınız Soyadınız" type="text" required autofocus>
+                        </div>
+                        <div class="form-control">
+                            <input placeholder="E-Posta Adresiniz" type="email" required>
+                        </div>
+                        <div class="form-control">
+                            <input placeholder="Konu" type="text" required>
+                        </div>
+                        <div class="form-control">
+                            <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required></textarea>
+                        </div>
+                        <div class="form-control">
+                            <button name="submit" type="submit" id="submit">GÖNDER</button>
+                        </div>
+        </form>
+              </div>
+     </div>
+    <script>
+                function openContactSabit() {
+                  document.getElementById("myContactSabit").style.width = "302px";
+                }
+
+                function closeContactSabit() {
+                  document.getElementById("myContactSabit").style.width = "0";
+                }
+                </script>
+</contactSabitMenu>
 
 <div class="banner">
     <div class="sayfaImage" style="background-image: url('/media/pageImage/2022/05/12/giriş-corpus-6.jpg')">
