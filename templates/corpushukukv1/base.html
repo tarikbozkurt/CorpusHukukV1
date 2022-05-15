@@ -27,6 +27,8 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl/owl.carousel.css' %}">
+     <link rel="stylesheet" href="{% static 'css/owl/owl.theme.default.css' %}">
+
 
 
 
@@ -110,10 +112,15 @@
                     <span>Corpus Hukuk Ofise 7/24 ulaşa bilirsiniz, Lütfen aşağıda mevcut olan form üzerinden bizlere hangi konuda ulaşmak
                     istediğinizi belirterek mesajınızı yazınız.
                     </span>
+                  <span><i class="fa fa-phone"> </i> Phone: 05340114824
+                    </span>
+                   <span><i class="fa fa-mail-bulk"> </i> Email: 05340114824
+                    </span>
+
               </div>
               <div class="ContactSabitForm">
                   <form id="contact" action="" method="">
-                        <h6>Corpus Hukuk İletişim </h6>
+                        <h6>Corpus Hukuk İletişim Formu </h6>
                         <div class="form-control">
                             <input placeholder="Adınız Soyadınız" type="text" required autofocus>
                         </div>
@@ -283,22 +290,25 @@
                  YAYINLARIMIZ
                         <hr style="width: 50%;">
              </div>
-    <a href="#" style="color: #938100;">
+
              <div class="vlogCards">
     <div id="vlogOwl" class="owl-carousel owl-theme">
+        {% for post in posts %}
           <div id="vlogItem" class="item">
                  <div class="vlogCard">
-                     <p class="vlogCardTag">{{ posts.post_tag }}</p>
-                     <div class="vlogCardTitle">{{ posts.post_title |upper}}</div>
-                     <div class="vlogCardText">{{ posts.post_text|truncatechars:180 }} </div>
+
+                     <p class="vlogCardTag">{{ post.post_tag }}</p>
+                     <div class="vlogCardTitle">{{ post.post_title |upper}}</div>
+                     <div class="vlogCardText">{{ post.post_text|truncatechars:180 }} </div>
                      <div class="vlogCardAlt">
 
-                             <div class="vlogCardOwner">{{ posts.owner }}</div>
-                             <div class="vlogCardDate">{{ posts.post_published_date }}</div>
+                             <div class="vlogCardOwner">{{ post.owner }}</div>
+                             <div class="vlogCardDate">{{ post.post_published_date }}</div>
 
                      </div>
                  </div>
           </div>
+        {% endfor %}
     </div>
                    <script>
                           var owl = $('#vlogOwl');
@@ -306,11 +316,14 @@
                             margin: 10,
                             lazyLoad:true,
                             loop: true,
-                            nav:true,
+                            dots: true,
+                            paginationSpeed: 400,
+					        rewindSpeed: 500,
+
                             responsive: {
                               0: {
                                 items: 1,
-                                  nav:true,
+
                               },
                               768: {
                                 items: 2
@@ -331,7 +344,7 @@
            <hr style="margin-bottom: 50px;
 ">
              </div>
-</a>
+
          </div>
         <div class="iletisim">
             <div class="iletisimGenel">

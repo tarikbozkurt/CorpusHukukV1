@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
     @font-face {
         font-family: AmericanaStd-Regular;
@@ -27,7 +27,7 @@
 
     .h__logo_img {
         display: block;
-        width: 162px;
+        width: 187px;
         height: 40px;
         /* object-fit: contain; */
     }
@@ -75,7 +75,7 @@
     bottom: 0;
     right: 0;
     margin-right: 7px;
-    margin-bottom: 31px;
+    margin-bottom: 41px;
     background-color: #c6bd98;
     overflow-x: hidden;
     padding-top: 10px;
@@ -98,12 +98,18 @@
     animation-direction: alternate;
     }
     .contactSabitIletisimBilgi{
-        text-align: justify;
+    text-align: justify;
     padding: 19px;
     margin-top: 7px;
     color: whitesmoke;
     font-weight: 600;
     background-color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
     }
     .contactSabitIletisimBilgi span{
         padding: 24px;
@@ -117,6 +123,7 @@
      padding-right: 24px;
     }
     .ContactSabitForm h6{
+        text-align: center;
         font-size: 15px;
     margin-top: 10px;
     color: white;
@@ -198,8 +205,8 @@
         top: 0;
         right: 20px;
         font-size: 50px;
-        margin-left: 67px;
-        margin-top: -8px;
+        padding: 0;/* margin-left: 67px; */
+        /* margin-top: -8px; */
     }
 
 

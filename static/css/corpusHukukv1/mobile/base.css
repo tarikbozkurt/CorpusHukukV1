@@ -42,7 +42,7 @@
     margin-right: 10px;
     background-color: #c5bc97;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px 2px black;
+        box-shadow: 1px 1px 10px 1px black;
     z-index: 2;
     }
     .contactSabitMenu img{
@@ -75,7 +75,7 @@
     bottom: 0;
     right: 0;
     margin-right: 7px;
-    margin-bottom: 31px;
+    margin-bottom: 41px;
     background-color: #c6bd98;
     overflow-x: hidden;
     padding-top: 10px;
@@ -86,7 +86,8 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-radius: 10px;}
+    border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px black;}
     .contactSabitClosebtn{
        color: #f5f5f5;
     font-size: 40px;
@@ -98,12 +99,18 @@
     animation-direction: alternate;
     }
     .contactSabitIletisimBilgi{
-        text-align: justify;
+    text-align: justify;
     padding: 19px;
     margin-top: 7px;
     color: whitesmoke;
     font-weight: 600;
     background-color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
     }
     .contactSabitIletisimBilgi span{
         padding: 24px;
@@ -117,6 +124,7 @@
      padding-right: 24px;
     }
     .ContactSabitForm h6{
+        text-align: center;
         font-size: 15px;
     margin-top: 10px;
     color: white;
@@ -176,7 +184,7 @@
 
     /* The sidepanel links */
     .sidepanel a {
-        padding: 6px 1px 60px 2px;
+        padding: 6px 1px 30px 2px;
         text-decoration: none;
         font-size: 20px;
         font-feature-settings: "kern" 1;
@@ -198,9 +206,9 @@
         top: 0;
         right: 20px;
         font-size: 50px;
-        margin-left: 67px;
+
         margin-top: -8px;
-    }
+    padding: 0;}
 
 
     /* Style the button that is used to open the sidepanel */
@@ -441,7 +449,9 @@
         flex-wrap: nowrap;
         padding: 23px;
     }
-
+    .card_sektörler{
+        margin-top: 120px;
+    }
     .card_Item_front_title {
 
         font-family: "AmericanaStd-Regular", sans-serif;
@@ -651,6 +661,20 @@
         height: 280px; display: flex;flex-direction: column;flex-wrap: nowrap;align-content: center;justify-content: center;align-items: center;
     }
 
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+   .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit; }
 
     #yetkinlikOwl .owl-item img {
         max-width: 150px;
@@ -680,13 +704,7 @@
         font-family: "AmericanaStd-Regular", sans-serif;
     /* margin-bottom: 50px; */}
 
-    #yetkinlikOwl button.owl-dot {
-        background: none;
-        /*color: inherit;*/
-        border: none;
-        padding: 0 !important;
-        /* font: */
-    }
+
 
     #yetkinlikOwl .owl-nav button.owl-next {
         background: none;
@@ -812,7 +830,7 @@ font-family: "Inter",sans-serif;font-weight: 600;color: #112620;}
     margin-top: 220px;
 font-size: 14px;}
 
-.vlogOwl .owl-stage-outer .owl-stage .item{
+#vlogOwl .owl-stage-outer .owl-stage .item{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -820,6 +838,10 @@ font-size: 14px;}
     justify-content: center;
     align-items: center;
 
+}
+#vlogOwl .owl-dots{
+    display: block;
+        margin-top: 50px;
 }
 .tumunuGorVlog{
     text-decoration: none;

@@ -37,7 +37,7 @@ def Base(request):
     hakkimizda = Hakkinda.objects.all()[:1]
     hakkimizdaIkinci = Hakkinda.objects.all()[1:]
     ekibimiz = Employee.objects.all()
-    posts = Vlog.objects.all().last()
+    posts = Vlog.objects.all()
     footerVlog=Vlog.objects.all()[:5]
     calismaAlanlari = CalismaAlanlari.objects.all()
     sektor = Sektorler.objects.all()
