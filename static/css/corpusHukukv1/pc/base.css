@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 768px) {
 
     @font-face {
         font-family: AmericanaStd-Regular;
@@ -28,10 +28,132 @@
     .h__logo_img {
         display: block;
         width: 162px;
-        height: 49px;
+        height: 40px;
         /* object-fit: contain; */
     }
 
+    .contactSabitMenu{
+    position: fixed;
+    height: 50px;
+    width: 55px;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    background-color: #c5bc97;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 2px black;
+    z-index: 2;
+    }
+    .contactSabitMenu img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 6px;
+    }
+    .contactSabitMenu span{
+        color: black;
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5bc97;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: 1px 1px 10px 2px black;
+    }
+
+    .contactSabitPanel {
+        height: 400px;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    margin-right: 7px;
+    margin-bottom: 31px;
+    background-color: #c6bd98;
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;}
+    .contactSabitClosebtn{
+       color: #f5f5f5;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    margin-left: 48px;
+    margin-top: -20px;
+    animation-direction: alternate;
+    }
+    .contactSabitIletisimBilgi{
+        text-align: justify;
+    padding: 19px;
+    margin-top: 7px;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: #787878;
+    }
+    .contactSabitIletisimBilgi span{
+        padding: 24px;
+    font-size: 12px;
+    }
+    .ContactSabitForm{
+        background-color: #787878;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 24px;
+     padding-right: 24px;
+    }
+    .ContactSabitForm h6{
+        font-size: 15px;
+    margin-top: 10px;
+    color: white;
+    }
+
+    .ContactSabitForm .form-control{
+     display: block;
+    width: 266px;
+    background-color: #787878;
+    padding: 0.275rem 0.15rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0e1217;
+    /* background-color: #fff; */
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .ContactSabitForm .form-control input{
+        width: 150px;
+        border-radius: 10px;
+    }
+    .ContactSabitForm .form-control button{
+        font-family: "Inter",sans-serif;
+    color: black;
+    background-color: #dbd8cb;
+    border-radius: 10px;
+    }
+    .ContactSabitForm .form-control textarea{
+        border-radius: 10px;
+    }
 
     .sidepanel {
         height: 100%; /* Specify a height */
@@ -83,13 +205,13 @@
 
     /* Style the button that is used to open the sidepanel */
     .openbtn {
-        font-size: 35px;
+        font-size: 30px;
         cursor: pointer;
         background-color: #0c356100;
         color: white;
         padding: 7px -13px;
         border: none;
-        color: #938100;
+        color: #c5bc97;
         font-weight: bolder;
         top: 7px;
         right: 10px;
@@ -133,7 +255,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        filter: blur(0.9px);
+         image-rendering: pixelated;
+        /* filter: blur(0.9px); */
     }
 
     .banner_Alan {
@@ -157,22 +280,23 @@
     }
 
     .banner_Alan_Metin p {
-        text-align: left;color: #112620;
+        color: #ababab;
         font-family: "AmericanaStd-Regular", sans-serif;
         margin: 0;
         /* margin-bottom: 266px; */
         /* padding-bottom: 50px; */
-        font-size: 35px;
+        font-size: 20px;
         /* font-size: 3.125rem; */
         line-height: 50px;
         line-height: 3.1rem;
         /* font-feature-settings: "kern" 1; */
         /* font-kerning: normal; */
-        padding: 24px;
-        /* TEXT-TRANSFORM: UPPERCASE; */
+        padding: 22px;
+        /* filter: drop-shadow(2px 4px 6px black); */TEXT-TRANSFORM: UPPERCASE;
         /* text-align: center; */
-        margin-top: 100px;
-    }
+        margin-top: 200px;
+
+        text-align: right;}
 
     .banner_Alan_Metin a {
         display: flex;
@@ -186,7 +310,7 @@
         margin-left: 120px;
         text-transform: uppercase;
         color: #484300;
-        font-size: initial;
+        margin-top: 50px;font-size: initial;
         font-family: "AmericanaStd-Regular", sans-serif;
         text-decoration: none;
     }
@@ -255,7 +379,7 @@
         /* flex-wrap: wrap; */
         width: 50%;
         background-color: bisque;
-        margin-bottom: 140px;
+        margin-bottom: 50px;
     text-align: center;margin-left: 25%;}
 
      #designHR {
@@ -635,18 +759,26 @@ padding: 20px;}
     width: 300px;
     background-color: #f4f4f1;
 padding: 24px;text-align: -webkit-center;border-radius: 10px;border: outset;}
+#vlogItem{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .vlogTumu{
     height: 100px;
     width: 100%;
     /* background-color: brown; */
     padding: 35px;
-display: flex;justify-content: center;align-items: center;align-content: center;flex-wrap: nowrap;flex-direction: column;}
+}
 .vlogTumuButton{
     background-color: black;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: #ededed;
-text-align: center;font-size: 18px;font-family: "Inter",sans-serif;text-decoration-style: none;text-transform: uppercase;border-style: groove;}
+text-align: center;font-size: 18px;font-family: "Inter",sans-serif;text-transform: uppercase;border-style: groove;}
 
 .vlogMetin{
     height: 100px;
@@ -671,6 +803,7 @@ text-align: start;float: left;margin-top: 50px;font-family: "Inter", sans-serif;
 
 font-family: "Inter",sans-serif;font-weight: 600;color: #112620;}
 
+
 .vlogCardDate{
 
 font-family: "Inter",sans-serif;font-weight: 600;color: #112620;}
@@ -678,13 +811,15 @@ font-family: "Inter",sans-serif;font-weight: 600;color: #112620;}
 .vlogCardAlt{
     margin-top: 220px;
 font-size: 14px;}
-#vlogItem{
-        display: flex;
+
+.vlogOwl .owl-stage-outer .owl-stage .item{
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
+
 }
 .tumunuGorVlog{
     text-decoration: none;
@@ -700,7 +835,7 @@ height: 100%;background-color: #112620;padding: 24px;}
     /* background-color: gray; */
     height: 100%;
     width: 100%;
-display: flex;flex-wrap: nowrap;flex-direction: row;align-content: center;justify-content: center;align-items: center;}
+}
 .iletisimUst {
 height: 100%;
     width: 100%;
@@ -721,7 +856,7 @@ height: 100%;
 
     width: 100%;
 
-display: flex;flex-wrap: nowrap;flex-direction: column;align-content: center;justify-content: center;align-items: center;}
+}
 .iletisimAlt{
     width: 100%;
     background-color: #112620;
@@ -777,8 +912,8 @@ width: 115px;
 }
 
 .odemeOrtaOdemetitle{
-    float: right;
-    background-color: red;
+   float: right;
+    background-color: #810101;
     border-radius: 10px;
     padding: 10px;
     margin-left: 30px;
